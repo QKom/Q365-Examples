@@ -15,6 +15,7 @@
 
                 if(r.innerError != undefined){
                     helper.showToast(component, helper, "error", r.message);
+                    $A.get("e.force:closeQuickAction").fire();
                 }
                 else{
                     let groupid = r.id;
@@ -51,9 +52,11 @@
 
                 if(r.innerError != undefined){
                     helper.showToast(component, helper, "error", r.message);
+                    $A.get("e.force:closeQuickAction").fire();
                 }
                 else{
                     helper.showToast(component, helper, "success", "Team successfully created.");
+                    $A.get("e.force:closeQuickAction").fire();
                 }
             }
             else if (state === "INCOMPLETE") {}
