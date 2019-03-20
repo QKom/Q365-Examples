@@ -1,0 +1,11 @@
+<aura:component controller="TeamCreateCtrl" implements="force:lightningQuickAction" access="global">
+  <aura:attribute name="description" type="String" access="global"/>
+  <aura:attribute name="groupname" type="String" access="global"/>
+  <aura:attribute name="restricted" type="Boolean" access="global"/>
+  
+  <lightning:input value="{!v.groupname}" label="Group Name" access="global"/>
+  <lightning:input value="{!v.description}" label="Description" access="global"/>
+  <lightning:input value="{!v.restricted}" label="Is Private Group" type="checkbox" access="global"/>
+
+  <lightning:button label="Create" onclick="{!c.invokeCreateTeam}"/>
+</aura:component>
