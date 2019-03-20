@@ -1,0 +1,27 @@
+# ignore the converting folders
+mdapiout/
+mdapipkg/
+
+# ignore specific layout folders
+flexipages/
+
+# ignore RemoteSiteSettings
+remoteSiteSettings/
+
+# ignore iOS specific files
+.DS_Store
+
+# ignore SFDX specific files
+.sfdx/
+tags
+
+# ignore Eclipse files
+.settings/
+.project
+
+# ignore Visual Studio Code specific files
+.vscode
+
+# ignore vi(m) swap files
+.swp
+.idea/
