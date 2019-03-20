@@ -1,11 +1,11 @@
 ({
-    doCreateGroup: function(component, helper, name, description, restricted){
+    doCreateGroup: function(component, helper){
         var action = component.get('c.createGroup');
 
         action.setParams({
-            name: name,
-            description: description,
-            restricted: restricted
+            name: component.get("v.groupname"),
+            description: component.get("v.description"),
+            restricted: component.get("v.restricted")
         });
 
         action.setCallback(this, function(response){
