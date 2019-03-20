@@ -1,12 +1,4 @@
 ({
-    initCreateTeam : function(component, event, helper) {
-        var description = component.get("v.description");
-        var groupname = component.get("v.groupname");
-        var restricted = component.get("v.restricted");
-
-        helper.doCreateGroup(component, helper, groupname, description, restricted);
-    },
-
     doCreateGroup: function(component, helper, name, description, restricted){
         var action = component.get('c.createGroup');
 
